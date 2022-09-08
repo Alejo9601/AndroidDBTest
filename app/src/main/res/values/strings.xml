@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TestBaseDatos</string>
+    <string name="et_account">Account Name</string>
+    <string name="et_username">User or E-mail</string>
+    <string name="et_password">Password for account</string>
+    <string name="btn_create">Create</string>
+    <string name="btn_search">Search</string>
+</resources>
