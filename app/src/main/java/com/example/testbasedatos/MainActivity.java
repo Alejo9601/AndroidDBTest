@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "storepass", null, 1);
         SQLiteDatabase database = admin.getWritableDatabase();
 
-        Cursor rowRecord = database.rawQuery("select username, password from passwords where account =" +accName,null);
+        Cursor rowRecord = database.rawQuery("select username, password from passwords where account = ?",new String[] {accName});
 
         if(!rowRecord.moveToFirst()) {
             Toast.makeText(this, "Sorry, that account does not exists", Toast.LENGTH_SHORT).show();
